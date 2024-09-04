@@ -1,116 +1,74 @@
-var tl = gsap.timeline({
-  scrollTrigger: {
+var tl = gsap.timeline({scrollTrigger:{
     trigger: ".two",
     start: "0% 95%",
     end: "70% 50%",
-    scrub: true, // corrected: boolean value
+    scrub: true,
     // markers: true,
-  },
-});
+}})
 
-tl.to("#fanta", {
-  // corrected: removed the extra period
-  top: "120%",
-  left: "0%",
-},'orange');
-
-tl.to('#orange-cut', {
-    top: "160%",
-    left: "23%",
-},'orange');
-
-tl.to(
-  "#orange",
-  {
+tl.to("#fanta",{
+    top: "120%",
+    left: "0%"
+}, 'orange')
+tl.to("#orange-cut",{
+    top:"160%",
+    left: "23%"
+}, 'orange')
+tl.to("#orange",{
     width: "15%",
-    top: "160%",
-    right: "10%",
-  },
-  "orange"
-);
-tl.to(
-  "#leaf",
-  {
-    top: "110%",
+    top:"160%",
+    right: "10%"
+}, 'orange')
+tl.to("#leaf",{
+    top:"110%",
     rotate: "130deg",
-    left: "70%",
-  },
-  "orange"
-);
-tl.to(
-  "#leaf2",
-  {
-    top: "110%",
+    left: "70%"
+}, 'orange')
+tl.to("#leaf2",{
+    top:"110%",
     rotate: "130deg",
-    left: "0%",
-  },
-  "orange"
-);
+    left: "0%"
+}, 'orange')
 
 
-var tl2 = gsap.timeline({
-  scrollTrigger: {
+var tl2 = gsap.timeline({scrollTrigger:{
     trigger: ".three",
     start: "0% 95%",
     end: "20% 50%",
     scrub: true,
     // markers: true,
-  },
-});
+}})
 
-tl2.from(
-  ".lemon1",
-  {
+tl2.from(".lemon1",{
     rotate: "-90deg",
     left: "-100%",
-    top: "110%",
-  },
-  "ca"
-);
-tl2.from(
-  "#cocacola",
-  {
+    top: "110%"
+}, 'ca')
+tl2.from("#cocacola",{
     rotate: "-90deg",
     top: "110%",
     left: "-100%",
-  },
-  "ca"
-);
+}, 'ca')
 
-tl2.from(
-  ".lemon2",
-  {
+tl2.from(".lemon2",{
     rotate: "90deg",
     left: "100%",
-    top: "110%",
-  },
-  "ca"
-);
-tl2.from(
-  "#pepsi",
-  {
+    top: "110%"
+}, 'ca')
+tl2.from("#pepsi",{
     rotate: "90deg",
     top: "110%",
     left: "100%",
-  },
-  "ca"
-);
+}, 'ca')
 
-tl2.to(
-  "#orange-cut",
-  {
-    width: "18%",
+tl2.to("#orange-cut",{
+    width:"18%",
     left: "42%",
-    top: "204%",
-  },
-  "ca"
-);
-tl2.to(
-  "#fanta",
-  {
-    width: "35%",
+    top: "204%"
+}, 'ca')
+tl2.to("#fanta",{
+    width:"35%",
     top: "210%",
     left: "33%",
-  },
-  "ca"
-);
+}, 'ca')
+
